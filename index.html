@@ -34,7 +34,7 @@
 
       <div id="star-div">
         <label for="starsign">Star Sign:</label>
-        <select name="star" id="starsign">
+        <select name="star" id="starsign" required>
           <option value="" disabled selected>Select your star sign</option>
           <option value="Aries">Aries</option>
           <option value="Taurus">Taurus</option>
@@ -53,9 +53,16 @@
 
       <button id="submit-btn" type="submit">Get your horoscope</button>
     </form>
+    <div class="flex-container">
+      <p class="firstname-error">
+        &gt; Your first name shouldn't contain numbers &lt;
+      </p>
 
-    <p id="error"></p>
+      <p class="lastname-error">
+        &gt; Your last name shouldn't contain numbers &lt;
+      </p>
+    </div>
 
-    <div id="horoscope-div"></div>
+    <!-- <div id="horoscope-div"></div> -->
   </body>
 </html>
