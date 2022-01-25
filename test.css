@@ -31,3 +31,19 @@ p {
   line-height: 2rem;
   font-size: 1.5rem;
 }
+
+#submit-btn {
+  margin-top: 2rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-family: "Caveat", cursive;
+  margin: auto;
+}
+
+#signup-form {
+  height: 20vh;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+}
