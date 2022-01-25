@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="signup-form" action="" method="get">
+      <div>
+        <label for="signup-firstname">First Name:</label>
+        <input
+          id="signup-firstname"
+          type="text"
+          placeholder="First Name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="signup-lastname">Last Name: </label>
+        <input
+          id="signup-lastname"
+          type="text"
+          placeholder="Last Name"
+          required
+        />
+      </div>
+
+      <div id="star-div">
+        <label for="starsign">Star Sign:</label>
+        <select name="star" id="starsign">
+          <option value="" disabled selected>Select your star sign</option>
+          <option value="Aries">Aries</option>
+          <option value="Taurus">Taurus</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Leo">Leo</option>
+          <option value="Virgo">Virgo</option>
+          <option value="Libra">Libra</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Sagittarius">Sagittarius</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Pisces">Pisces</option>
+        </select>
+      </div>
+
+      <button id="submit-btn" type="submit">Get your horoscope</button>
+    </form>
+
+    <p id="error"></p>
+
+    <div id="horoscope-div"></div>
+  </body>
+</html>
