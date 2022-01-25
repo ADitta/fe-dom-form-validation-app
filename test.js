@@ -18,52 +18,87 @@ console.log(star);
 title.innerText = `Horoscope for ${firstName} ${lastName}`;
 starSign.innerText = star;
 
+const numAge = parseInt(age);
 switch (star) {
   case "Aquarius":
-    horoscope.innerText = `There's travel in your future ${firstName}, when your tongue freezes to the back of a speeding bus! 
+    horoscope.innerText = `There's travel in your future ${firstName}, when your tongue freezes to the back of a speeding bus!`;
+    if (numAge >= 30) {
+      horoscope.innerText += `
     Fill that void in your pathetic life, by playing whack-a-mole 17 hours a day.`;
+    }
     break;
   case "Pisces":
-    horoscope.innerText = `Try to avoid any Virgos or Leos with the ebola virus. 
+    horoscope.innerText = `Try to avoid any Virgos or Leos with the ebola virus. `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     You're the true Lord of the dance, ${firstName}, no matter what those idiots at work say.`;
+    }
     break;
   case "Aries":
-    horoscope.innerText = `The look on ${firstName}'s face will be priceless when you find that 40 pound watermelon in your colon. 
+    horoscope.innerText = `The look on ${firstName}'s face will be priceless when you find that 40 pound watermelon in your colon.`;
+    if (numAge > 30) {
+      horoscope.innerText += ` 
     Trade toothbrushes with an albino dwarf, then give a hickey to Meryl Streep.`;
+    }
+
     break;
   case "Taurus":
-    horoscope.innerText = `You will never find true happiness. What you gonna do ${firstName}, cry about it? 
+    horoscope.innerText = `You will never find true happiness. What you gonna do ${firstName}, cry about it? `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     The stars predict tomorrow you'll wake up, do a bunch of stuff and then go back to sleep.`;
+    }
     break;
   case "Gemini":
-    horoscope.innerText = `Your birthday party will be ruined once again by ${firstName}'s explosive flatulence. 
+    horoscope.innerText = `Your birthday party will be ruined once again by ${firstName}'s explosive flatulence. `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     Your love life will run into trouble when your fiancé hurls a javelin through your chest.`;
+    }
     break;
   case "Cancer":
     horoscope.innerText = `${firstName}... Try not to shove a roll of duct tape up your nose while taking your driver's test.`;
     break;
   case "Leo":
-    horoscope.innerText = `Now is not a good time to photocopy your butt and staple it to your bosses face, ${firstName}. 
+    horoscope.innerText = `Now is not a good time to photocopy your butt and staple it to your bosses face, ${firstName}. `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     Eat a bucket of tuna-flavored pudding, then wash it down with a gallon of strawberry quik.`;
+    }
     break;
   case "Virgo":
-    horoscope.innerText = `All virgos are extremely friendly and intelligent, ${firstName}... except for you. 
+    horoscope.innerText = `All virgos are extremely friendly and intelligent, ${firstName}... except for you. `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     Expect a big surprise today when you wind up with your head impaled upon a stick.`;
+    }
     break;
   case "Libra":
-    horoscope.innerText = `A big promotion is just around the corner, ${firstName}... for someone much more talented than you. 
+    horoscope.innerText = `A big promotion is just around the corner, ${firstName}... for someone much more talented than you. `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     Laughter is the very best medicine. Remember that when your appendix bursts next week.`;
+    }
     break;
   case "Scorpio":
-    horoscope.innerText = `${firstName}, get ready for an unexpected trip when you fall screaming from an open window.
+    horoscope.innerText = `${firstName}, get ready for an unexpected trip when you fall screaming from an open window.`;
+    if (numAge > 30) {
+      horoscope.innerText += `
     Work a little bit harder on improving your low self-esteem, you stupid freak.`;
+    }
     break;
   case "Sagittarius":
-    horoscope.innerText = `${firstName}! All your friends are laughing behind your back (kill them). 
+    horoscope.innerText = `${firstName}! All your friends are laughing behind your back (kill them). `;
+    if (numAge > 30) {
+      horoscope.innerText += `
     Take down all those naked pictures of Ernest Borgnine, you've got hanging in your den.`;
+    }
     break;
   case "Capricorn":
-    horoscope.innerText = `The stars say that you're an exciting and wonderful person, ${firstName}. But, you know they're lying.
+    horoscope.innerText = `The stars say that you're an exciting and wonderful person, ${firstName}. But, you know they're lying.`;
+    if (numAge > 30) {
+      horoscope.innerText += `
     If I were you, I'd lock my doors and windows and never, never, never, never, never leave my house again!`;
+    }
     break;
 }
