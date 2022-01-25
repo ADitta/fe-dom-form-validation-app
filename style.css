@@ -30,6 +30,13 @@ label {
   font-size: 2rem;
   align-self: flex-end;
 }
+#signup-age {
+  margin-left: 2.4rem;
+}
+
+.age-error {
+  display: none;
+}
 input {
   padding: 0.3rem;
   border-radius: 0.5rem;

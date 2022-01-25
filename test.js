@@ -13,7 +13,7 @@ function getUrlData() {
   return dataObject;
 }
 const data = getUrlData();
-const { firstName, lastName, star } = data;
+const { firstName, lastName, age, star } = data;
 console.log(star);
 title.innerText = `Horoscope for ${firstName} ${lastName}`;
 starSign.innerText = star;
