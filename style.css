@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #76d5db;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2355cfd7' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
 #signup-form {
   display: flex;
   flex-direction: column;
@@ -12,11 +17,12 @@
   height: 50vh;
   margin: auto;
   padding: 2rem;
-  background-color: aqua;
+  background: linear-gradient(200deg, white, aqua);
   align-items: flex-start;
   justify-content: space-around;
   border-radius: 1rem;
   margin-top: 3rem;
+  box-shadow: 1px 3px 4px 4px rgb(34, 173, 207);
 }
 
 label {
@@ -57,9 +63,9 @@ select {
 } */
 
 .valid {
-  border: 5px green solid;
+  border: 3px rgb(8, 231, 8) solid;
 }
 
 .invalid {
-  border: 5px red solid;
+  border: 3px red solid;
 }
